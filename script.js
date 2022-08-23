@@ -77,7 +77,8 @@ function renderBox() {
   let maxTop = gameSize.height - boxSize;
   let maxLeft = gameSize.width - boxSize;
   let randomColor = getRandom(0, colors.length);
-  box.style.height = box.style.width = boxSize + "px";zz
+  box.style.height = box.style.width = boxSize + "px";
+  zz;
   box.style.position = "absolute";
   box.style.backgroundColor = colors[randomColor];
   box.style.top = getRandom(0, maxTop) + "px";
@@ -98,4 +99,10 @@ function hide($el) {
 
 function getRandom(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
+}
+
+for (var i = 1; i <=10; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 0)
 }
